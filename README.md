@@ -85,9 +85,6 @@ defeating the purpose of preparation and caching
 - **Prepared Statements**: Normally, Postgres can prepare and cache
 query execution plans. With this library, each query is treated as new,
 requiring a new execution plan.
-- **Query Cache**: Ecto's query cache
-becomes ineffective as each query is considered unique due to the varying
-trace context.
 
 ### When to Use
 
@@ -108,10 +105,6 @@ If you need both tracing and prepared statements, consider:
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ## Related Links
 

@@ -80,9 +80,6 @@ defmodule OpentelemetrySqlcommenter do
   - **Prepared Statements**: Normally, Postgres can prepare and cache
   query execution plans. With this library, each query is treated as new,
   requiring a new execution plan.
-  - **Query Cache**: Ecto's query cache
-  becomes ineffective as each query is considered unique due to the varying
-  trace context.
 
   ### When to Use
 
