@@ -131,7 +131,7 @@ defmodule OpentelemetrySqlcommenter do
 
   ```
   YOUR QUERY/*traceparent='00-trace_id-span_id-flags'*/
-  ````
+  ```
   """
 
   @doc """
