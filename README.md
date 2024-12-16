@@ -123,3 +123,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 Full documentation can be found at [HexDocs](https://hexdocs.pm/opentelemetry_sqlcommenter).
 ```
+# opentelemetry_sqlcommenter
