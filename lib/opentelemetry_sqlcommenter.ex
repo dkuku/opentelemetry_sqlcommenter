@@ -134,10 +134,10 @@ defmodule OpentelemetrySqlcommenter do
   """
 
   @doc """
-  Prepares a query by adding OpenTelemetry trace context as a SQL comment, but only for sampled traces.
+  Prepares a query by adding OpenTelemetry trace context as a SQL comment for any active span.
 
-  This function is designed to be used with `defdelegate` in your Ecto repository to automatically
-  add trace context to all database queries when sampling is enabled (trace_flags = 1).
+  Similar to `prepare_query_sampled/3` but adds trace context for all traces regardless of sampling status.
+  Designed to be used with `defdelegate` in your Ecto repository when you want to track all queries.
 
   ## Setup
 
@@ -173,10 +173,10 @@ defmodule OpentelemetrySqlcommenter do
   end
 
   @doc """
-  Prepares a query by adding OpenTelemetry trace context as a SQL comment for any active span.
+  Prepares a query by adding OpenTelemetry trace context as a SQL comment, but only for sampled traces.
 
-  Similar to `prepare_query/3` but adds trace context for all traces regardless of sampling status.
-  Designed to be used with `defdelegate` in your Ecto repository when you want to track all queries.
+  This function is designed to be used with `defdelegate` in your Ecto repository to automatically
+  add trace context to all database queries when sampling is enabled (trace_flags = 1).
 
   ## Setup
 
