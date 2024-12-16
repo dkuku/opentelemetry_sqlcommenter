@@ -7,10 +7,12 @@ defmodule OpentelemetrySqlcommenter do
   better observability by linking database operations with distributed
   traces.
 
+  > **Note:** Currently only compatible with PostgreSQL databases.
+
   ## Features
 
   - Automatically injects OpenTelemetry trace context into SQL queries
-  - Compatible with Ecto repositories
+  - Compatible with Ecto repositories using PostgreSQL
   - Follows W3C Trace Context specification
   - Minimal performance overhead
   - Easy integration with existing projects

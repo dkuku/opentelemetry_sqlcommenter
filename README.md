@@ -5,10 +5,12 @@ OpenTelemetry trace context to your SQL queries as comments. This enables
 better observability by linking database operations with distributed
 traces.
 
+> **Note:** Currently only compatible with PostgreSQL databases.
+
 ## Features
 
 - Automatically injects OpenTelemetry trace context into SQL queries
-- Compatible with Ecto repositories
+- Compatible with Ecto repositories using PostgreSQL
 - Follows W3C Trace Context specification
 - Minimal performance overhead
 - Easy integration with existing projects
@@ -115,5 +117,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Documentation
 
 Full documentation can be found at [HexDocs](https://hexdocs.pm/opentelemetry_sqlcommenter).
-```
-# opentelemetry_sqlcommenter
